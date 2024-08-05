@@ -6,7 +6,6 @@ import { setPost } from "state";
 import { BASE_URL } from "constants";
 
 const CommentsWidget = ({ name, postComments, postId }) => {
-    //   const posts = useSelector((state) => state.posts);
     const token = useSelector((state) => state.token);
     const [comments, setComments] = useState(postComments);
     const [comment, setComment] = useState('');
@@ -14,7 +13,6 @@ const CommentsWidget = ({ name, postComments, postId }) => {
 
     const { palette } = useTheme();
     const main = palette.neutral.main;
-    const primary = palette.primary.main;
 
     const commentPost = async (value) => {
         const response = await fetch(`${BASE_URL}/posts/${postId}/comment`, {
