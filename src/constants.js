@@ -1,1 +1,1 @@
-export const BASE_URL = "https://socioconnect-backend-k6rq.onrender.com/"
+export const BASE_URL = "https://socioconnect-backend-k6rq.onrender.com"
